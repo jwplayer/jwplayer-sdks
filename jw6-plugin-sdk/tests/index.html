@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JW6 Plugin Tests</title>
+    <script type="text/javascript" src="assets/jwplayer.js"></script>
+    <script type="text/javascript">
+        var primaryCookie = 'html5';
+        var cookies = document.cookie.split(";");
+        for (i=0; i < cookies.length; i++) {
+            var x = cookies[i].substr(0, cookies[i].indexOf("="));
+            var y = cookies[i].substr(cookies[i].indexOf("=") + 1);
+            x = x.replace(/^\s+|\s+$/g,"");
+            if (x == 'primaryCookie') {
+                primaryCookie = y;
+            }
+        }
+    </script>
+    <style type="text/css">
+        body { padding: 50px 100px; width: 720px; font: 13px/20px Arial; background: #FFF; }
+        a, h1, h2 { color: #369; }
+        h1 { font-size: 32px; }
+        h2 { margin-top: 40px; }
+        input { width: 240px; }
+    </style>
+</head>
+<body>
+
+<h1>JW6 Plugin Tests</h1>
+
+<p>This page tests the two example plugins included in this SDK. Use the link below to switch the primary rendering mode from Flash to HTML5:</p>
+
+<ul>
+<li><a href="javascript:reload();" id="switcher">Switch primary to Flash</a></li>
+</ul>
+
+<script type="text/javascript">
+    if(primaryCookie == 'flash') { 
+        document.getElementById('switcher').innerHTML = 'Switch primary to HTML5';
+    }
+    function reload() {
+        primaryCookie == 'html5' ? primaryCookie = 'flash': primaryCookie = 'html5';
+        document.cookie = "primaryCookie=" + primaryCookie;
+        window.location.reload();
+    };
+</script>
+
+<p>Note that, in order for this page to work (in Flash), you have to load it from a webserver (or localhost)!</p>
+
+
+
+<h2>Hello World</h2>
+
+<p>This player loads the <em>helloworld</em> example plugin.</p>
+
+<div id="helloworld"></div>
+
+<script type="text/javascript">
+    jwplayer("helloworld").setup({
+        file: 'http://content.bitsontherun.com/videos/bkaovAYt-injeKYZS.mp4',
+        image: 'http://content.bitsontherun.com/thumbs/bkaovAYt-480.jpg',
+        primary: primaryCookie,
+        plugins: {
+            "../plugins/helloworld/helloworld.js": {
+                text: "Hello to the World!"
+            }
+        }
+    });
+</script>
+
+
+
+<h2>API Tester</h2>
+
+<p>This player loads the <em>apitester</em> example plugin.</p>
+
+<div id="apitester"></div>
+
+<script type="text/javascript">
+    jwplayer("apitester").setup({
+        file: 'http://content.bitsontherun.com/videos/3XnJSIm4-I3ZmuSFT.m4a',
+        image: 'http://content.bitsontherun.com/thumbs/3XnJSIm4-480.jpg',
+        height: 204,
+        primary: primaryCookie,
+        plugins: {
+            "../plugins/apitester/apitester.js": {}
+        }
+    });
+</script>
+
+
+
+</body>
+</html>

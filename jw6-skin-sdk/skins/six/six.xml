@@ -1,0 +1,167 @@
+<skin version="2.0" name="Six" author="LongTail Video" target="6.0">
+
+	<components>
+		<component name="controlbar">
+			<settings>
+				<setting name="margin" value="8" />
+				<setting name="fontcolor" value="eeeeee" />
+				<setting name="fontsize" value="11" />
+				<setting name="fontweight" value="bold" />
+				<setting name="maxwidth" value="800" />
+			</settings>
+
+			<elements>
+				<element name="background" src="back.png" />
+				<element name="capLeft" src="left.png" />
+				<element name="capRight" src="right.png" />
+				<element name="divider" src="divider.png" />
+
+				<element name="playButton" src="playButton.png" />
+				<element name="playButtonOver" src="playButtonOver.png" />
+				<element name="pauseButton" src="pauseButton.png" />
+				<element name="pauseButtonOver" src="pauseButtonOver.png" />
+				<element name="prevButton" src="prevButton.png" />
+				<element name="prevButtonOver" src="prevButtonOver.png" />
+				<element name="nextButton" src="nextButton.png" />
+				<element name="nextButtonOver" src="nextButtonOver.png" />
+
+				<element name="elapsedBackground" src="divider.png" />
+				<element name="timeSliderCapLeft" src="timeSliderCap.png" />
+				<element name="timeSliderCapRight" src="timeSliderCap.png" />
+				<element name="timeSliderRail" src="timeSliderRail.png" />
+				<element name="timeSliderRailCapLeft" src="timeSliderRailCapLeft.png" />
+				<element name="timeSliderRailCapRight" src="timeSliderRailCapRight.png" />
+				<element name="timeSliderBuffer" src="timeSliderBuffer.png" />
+				<element name="timeSliderBufferCapLeft" src="timeSliderBufferCapLeft.png" />
+				<element name="timeSliderBufferCapRight" src="timeSliderBufferCapRight.png" />
+				<element name="timeSliderProgress" src="timeSliderProgress.png" />
+				<element name="timeSliderProgressCapLeft" src="timeSliderProgressCapLeft.png" />
+				<element name="timeSliderProgressCapRight" src="timeSliderProgressCapRight.png" />
+				<element name="timeSliderThumb" src="timeSliderThumb.png" />
+				<element name="durationBackground" src="divider.png" />
+
+				<element name="hdButton" src="hd.png" />
+				<element name="hdButtonOver" src="hdOver.png" />
+				<element name="ccButton" src="cc.png" />
+				<element name="ccButtonOver" src="ccOver.png" />
+
+				<element name="muteButton" src="muteButton.png" />
+				<element name="muteButtonOver" src="muteButtonOver.png" />
+				<element name="unmuteButton" src="unmuteButton.png" />
+				<element name="unmuteButtonOver" src="unmuteButtonOver.png" />
+				<element name="fullscreenButton" src="fullscreenButton.png" />
+				<element name="fullscreenButtonOver" src="fullscreenButtonOver.png" />
+				<element name="normalscreenButton" src="normalscreenButton.png" />
+				<element name="normalscreenButtonOver" src="normalscreenButtonOver.png" />
+				
+			</elements>
+		</component>
+
+		<component name="display">
+			<settings>
+				<setting name="bufferinterval" value="100" />
+				<setting name="bufferrotation" value="45" />
+				<setting name="fontcolor" value="cccccc" />
+				<setting name="overcolor" value="ffffff" />
+				<setting name="fontsize" value="15" />
+				<setting name="fontweight" value="normal" />
+			</settings>
+			<elements>
+				<element name="background" src="back.png" />
+				<element name="capLeft" src="left.png" />
+				<element name="capRight" src="right.png" />
+				<element name="bufferIcon" src="buffer.png" />
+				<element name="errorIcon" src="error.png" />
+				<element name="playIcon" src="play.png" />
+				<element name="playIconOver" src="playOver.png" />
+				<element name="replayIcon" src="replay.png" />
+				<element name="replayIconOver" src="replayOver.png" />
+			</elements>
+		</component>
+
+		<component name="dock">
+			<settings>
+				<setting name="iconalpha" value="0.75" />
+				<setting name="iconalphaactive" value="0.5" />
+				<setting name="iconalphaover" value="1" />
+				<setting name="margin" value="8" />
+			</settings>
+			<elements>
+				<element name="button" src="button.png" />
+				<element name="buttonOver" src="button.png" />
+				<element name="buttonActive" src="active.png" />
+				<element name="divider" src="divider.png" />
+			</elements>
+		</component>
+
+		<component name="playlist">
+			<settings>
+				<setting name="activecolor" value="bfbfbf" />
+				<setting name="backgroundcolor" value="262626" />
+				<setting name="fontcolor" value="999999" />
+				<setting name="fontsize" value="11" />
+				<setting name="fontweight" value="normal" />
+				<setting name="overcolor" value="cccccc" />
+				<setting name="titlecolor" value="cccccc" />
+				<setting name="titleactivecolor" value="ffffff" />
+				<setting name="titleovercolor" value="ffffff" />
+				<setting name="titlesize" value="13" />
+				<setting name="titleweight" value="normal" />
+			</settings>
+			<elements>
+				<element name="divider" src="divider.png" />
+				<element name="item" src="item.png" />
+				<element name="itemActive" src="active.png" />
+				<element name="itemImage" src="image.png" />
+				<element name="sliderCapBottom" src="cap.png" />
+				<element name="sliderCapTop" src="cap.png" />
+				<element name="sliderRail" src="rail.png" />
+				<element name="sliderRailCapBottom" src="railBottom.png" />
+				<element name="sliderRailCapTop" src="railTop.png" />
+				<element name="sliderThumb" src="thumb.png" />
+				<element name="sliderThumbCapBottom" src="thumbBottom.png" />
+				<element name="sliderThumbCapTop" src="thumbTop.png" />
+			</elements>
+		</component>
+
+		<component name="tooltip">
+			<settings>
+				<setting name="fontcase" value="normal" />
+				<setting name="fontcolor" value="cccccc" />
+				<setting name="fontsize" value="12" />
+				<setting name="fontweight" value="normal" />
+				<setting name="activecolor" value="cccccc" />
+				<setting name="overcolor" value="ffffff" />
+			</settings>
+
+			<elements>
+				<element name="arrow" src="arrow.png" />
+				<element name="background" src="back.png" />
+				<element name="capTop" src="back.png" />
+				<element name="capBottom" src="back.png" />
+				<element name="capLeft" src="back.png" />
+				<element name="capRight" src="back.png" />
+				<element name="capTopLeft" src="topLeft.png" />
+				<element name="capTopRight" src="topRight.png" />
+				<element name="capBottomLeft" src="bottomLeft.png" />
+				<element name="capBottomRight" src="bottomRight.png" />
+				<element name="menuTopHD" src="hd.png" />
+				<element name="menuTopCC" src="cc.png" />
+				<element name="menuOption" src="option.png" />
+				<element name="menuOptionOver" src="over.png" />
+				<element name="menuOptionActive" src="over.png" />
+				<element name="volumeCapTop" src="volumeSliderCap.png" />
+				<element name="volumeCapBottom" src="volumeSliderCap.png" />
+				<element name="volumeRail" src="volumeSliderRail.png" />
+				<element name="volumeRailCapBottom" src="volumeSliderRailCapBottom.png" />
+				<element name="volumeRailCapTop" src="volumeSliderRailCapTop.png" />
+				<element name="volumeProgress" src="volumeSliderProgress.png" />
+				<element name="volumeProgressCapBottom" src="volumeSliderProgressCapBottom.png" />
+				<element name="volumeProgressCapTop" src="volumeSliderProgressCapTop.png" />
+				<element name="volumeThumb" src="volumeSliderThumb.png" />
+			</elements>
+		</component>
+
+	</components>
+
+</skin>

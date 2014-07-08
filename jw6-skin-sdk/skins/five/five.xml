@@ -1,0 +1,110 @@
+<skin target="6.0" name="Five" author="LongTail Video">
+	<components>
+
+
+		<component name="controlbar">
+			<settings>
+				<setting name="margin" value="0" />
+				<setting name="maxwidth" value="9999" />
+				<setting name="fontcolor" value="000000" />
+			</settings>
+			<elements>
+				<element name="background" src="back.png" />
+				<element name="capLeft" src="divider.png" />
+				<element name="capRight" src="divider.png" />
+				<element name="divider" src="divider.png" />
+				
+				<element name="playButton" src="play.png" />
+				<element name="pauseButton" src="pause.png" />
+				<element name="prevButton" src="prev.png" />
+				<element name="nextButton" src="next.png" />
+				<element name="elapsedBackground" src="texts.png" />
+				<element name="durationBackground" src="texts.png" />
+				
+				<element name="hdButton" src="hd.png" />
+				<element name="ccButton" src="cc.png" />
+				<element name="muteButton" src="mute.png" />
+				<element name="unmuteButton" src="unmute.png" />
+				<element name="fullscreenButton" src="fullscreen.png" />
+				<element name="normalscreenButton" src="normalscreen.png" />
+				
+				<element name="timeSliderRail" src="timeRail.png" />
+				<element name="timeSliderBuffer" src="timeBuffer.png" />
+				<element name="timeSliderProgress" src="timeProgress.png" />
+				<element name="timeSliderThumb" src="timeThumb.png" />
+			</elements>
+		</component>
+
+		<component name="display">
+			<settings>
+				<setting name="bufferrotation" value="90" />
+				<setting name="bufferinterval" value="150" />
+				<setting name="fontcolor" value="ffffff" />
+			</settings>
+			<elements>
+				<element name="background" src="back.png" />
+				<element name="capLeft" src="back.png" />
+				<element name="capRight" src="back.png" />
+				
+				<element name="bufferIcon" src="buffer.png" />
+				<element name="errorIcon" src="error.png" />
+				<element name="playIcon" src="play.png" />
+				<element name="replayIcon" src="replay.png" />
+			</elements>
+		</component>
+
+		<component name="dock">
+			<elements>
+				<element name="divider" src="divider.png" />
+				<element name="button" src="back.png" />
+				<element name="buttonActive" src="active.png" />
+			</elements>
+		</component>
+
+		<component name="playlist">
+			<settings>
+				<setting name="backgroundcolor" value="e6e6e6" />
+				<setting name="fontcolor" value="333333" />
+				<setting name="activecolor" value="000000" />
+				<setting name="overcolor" value="000000" />
+				<setting name="titlecolor" value="333333" />
+				<setting name="titleactivecolor" value="000000" />
+				<setting name="titleovercolor" value="000000" />
+				<setting name="titleweight" value="bold" />
+			</settings>
+			<elements>
+				<element name="divider" src="divider.png" />
+				<element name="item" src="item.png" />
+				<element name="itemActive" src="active.png" />
+				<element name="itemImage" src="image.png" />
+				<element name="sliderCapTop" src="cap.png" />
+				<element name="sliderRail" src="rail.png" />
+				<element name="sliderThumb" src="thumb.png" />
+				<element name="sliderCapBottom" src="cap.png" />
+			</elements>
+		</component>
+
+		<component name="tooltip">
+			<settings>
+				<setting name="fontcase" value="upper" />
+				<setting name="fontweight" value="bold" />
+				<setting name="fontsize" value="11" />
+			</settings>
+			<elements>
+				<element name="arrow" src="arrow.png" />
+				<element name="background" src="back.png" />
+				<element name="menuOption" src="option.png" />
+				<element name="menuOptionActive" src="active.png" />
+				<element name="menuTopHD" src="hd.png" />
+				<element name="menuTopCC" src="cc.png" />
+				<element name="menuBottom" src="bottom.png" />
+				<element name="volumeCapTop" src="cap.png" />
+				<element name="volumeCapBottom" src="cap.png" />
+				<element name="volumeRail" src="rail.png" />
+				<element name="volumeProgress" src="progress.png" />
+				<element name="volumeThumb" src="thumb.png" />
+			</elements>
+		</component>
+
+  </components>
+</skin>
