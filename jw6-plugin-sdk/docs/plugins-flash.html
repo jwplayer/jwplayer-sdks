@@ -52,14 +52,14 @@ package {
   public class HelloWorld extends Sprite implements IPlugin6 {
 
     /** Configuration options of the plugin. **/
-    private var config:Object;
+    private var config:PluginConfig;
     /** Reference to the JW Player API. **/
     private var player:IPlayer;
     /** Text field to print into. **/
     private var field:TextField;
 
     /** This function is automatically called upon load. **/
-    public function initPlugin(ply:IPlayer, cfg:Object):void {
+    public function initPlugin(ply:IPlayer, cfg:PluginConfig):void {
       player = ply;
       config = cfg;
       field = new TextField();
