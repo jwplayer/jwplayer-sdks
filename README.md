@@ -1,4 +1,4 @@
-jwplayer-sdks
-=============
+# JW Player Developer SDKs
 
-Plugin and skinning SDKs for the JW Player
+Info about writing javascript media providers: [here](providers/javascript-providers.md)
+
