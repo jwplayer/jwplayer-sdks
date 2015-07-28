@@ -1,6 +1,8 @@
 # Writing an HTML5 Provider
 
 ### Overview
+A provider is a strategy for implementing media playback. A provider abstracts away the implementatino details
+for a given type of media, allowing the player to treat each one the same.
 
 1. Add jwplayer to your page
 2. Add your new provider to the page
@@ -12,8 +14,6 @@
 
 ### Intro
 
-A provider is a strategy for implementing media playback. A provider abstracts away the implementatino details
-for a given type of media, allowing the player to treat each one the same.
 
 Since a media provider must implement all features of video playback, 
 it must contain the associated methods of ***load, play, pause, volume, mute,*** etc...
