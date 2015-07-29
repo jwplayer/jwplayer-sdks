@@ -21,18 +21,19 @@ It must also contain a few JW Player methods like
 
 1. supports(:Item):Boolean - a method to determine if the provider supports a given file
 1. getName():String - returns the name of your provider, for example "MyProvider"
-1. and more - please visit the [Default Provider](https://github.com/jwplayer/jwplayer/blob/master/src/js/providers/providers.js) for more info.
+1. and more - please visit the [Default Provider](https://github.com/jwplayer/jwplayer/blob/master/src/js/providers/default.js) for more info.
 
 
 ### Details
 
-When creating a new provider, it is important to note that it will be extending the [default provider](https://github.com/jwplayer/jwplayer/blob/master/src/js/providers/providers.js)
+When creating a new provider, it is important to note that it will be extending the [default provider](https://github.com/jwplayer/jwplayer/blob/master/src/js/providers/default.js)
 
 You are expected to use this.setState within your provider for visual cues and analytics to work properly.
 
 **States**
 * states.LOADING - after load, seek, or quality change
 * states.STALLED - after playback halts due to underbuffer
+* states.BUFFERING - buffering
 * states.PLAYING - playing
 * states.PAUSED - paused
 * states.IDLE - After stopped
@@ -47,7 +48,7 @@ are not necessary.
 * events.JWPLAYER_MEDIA_BUFFER_FULL - Enough has buffered to begin playback
 * events.JWPLAYER_MEDIA_TIME - Send position and duration of video
 * events.JWPLAYER_MEDIA_META - Send duration, height and width
-* events.JWPLAYER_MEDIA_SEEKED - Send when a seek begins
+* events.JWPLAYER_MEDIA_SEEK - Send when a seek begins
 * events.JWPLAYER_MEDIA_SEEKED - Send after a seek completes
 * events.JWPLAYER_MEDIA_ERROR - Send error reports
 * events.JWPLAYER_MEDIA_BEFOREPLAY - Allows a preroll to occur
