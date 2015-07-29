@@ -1,4 +1,4 @@
-# Writing an HTML5 Provider
+# Writing a JavaScript Provider
 
 ### Overview
 A provider is a strategy for implementing media playback. A provider abstracts away the implementation details
