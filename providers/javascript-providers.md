@@ -52,8 +52,8 @@ are not necessary.
 * events.JWPLAYER_MEDIA_ERROR - Send error reports
 * events.JWPLAYER_MEDIA_BEFOREPLAY - Allows a preroll to occur
 * events.JWPLAYER_MEDIA_BEFORECOMPLETE - Allows a postroll to occur
-* events.JWPLAYER_MEDIA_LEVELS - Allows a postroll to occur
-* events.JWPLAYER_PROVIDER_FIRST_FRAME - Allow QOE on startup time
+* events.JWPLAYER_MEDIA_LEVELS - Allows the controlbar to show quality levels
+* events.JWPLAYER_PROVIDER_FIRST_FRAME - Allow analytics on startup time
 
 ### Examples
 
