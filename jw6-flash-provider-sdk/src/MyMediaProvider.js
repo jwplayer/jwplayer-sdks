@@ -24,7 +24,7 @@
         var _timerElement = document.createElement('div');
         var _this = this;
 
-        utils.css.style(_timerElement, {
+        utils.style(_timerElement, {
             color : 'white',
             'text-align': 'center',
             height: '100%',
@@ -69,12 +69,12 @@
         function setVisibility(state) {
             state = !!state;
             if (state) {
-                utils.css.style(_container, {
+                utils.style(_container, {
                     visibility: 'visible',
                     opacity: 1
                 });
             } else {
-                utils.css.style(_container, {
+                utils.style(_container, {
                     visibility: '',
                     opacity: 0
                 });

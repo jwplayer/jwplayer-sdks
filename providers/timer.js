@@ -23,12 +23,12 @@
 
         utils.extend(this, new events.eventdispatcher('provider.' + this.name));
 
-        utils.css.style(this._timerElement, {
+        utils.style(this._timerElement, {
             color : 'white',
-            'text-align': 'center',
+            textAlign: 'center',
             height: '100%',
-            'font-size' : '18px',
-            'margin-top': '25%'
+            fontSize : '18px',
+            marginTop: '25%'
         });
     }
 
