@@ -1,9 +1,9 @@
 (function(jwplayer){
 
-// player - an instance of the player's public api
-// config - plugin options, searching the player config for an attribute matching the plugin name
-// div - an element where you can put your content
 var Plugin = function(player, config, div) {
+    // player - an instance of the player's public api
+    // config - plugin options, searching the player config for an attribute matching the plugin name
+    // div - an element where you can put your content
 
     function setup(evt) {
         div.style.color = '#F00';
