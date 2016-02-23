@@ -1,9 +1,23 @@
 (function(jwplayer) {
-
+    
+    /*
+     * These objects are only available in commercial player builds.
+     * They are considered deprecated and not included in open-source
+     * builds of jwplayer/jwplayer.
+     *
+     * Open-source builds only expose underscore on player instances: `jwplayer()._`
+     *  events and state constants should be replaced with the appropriate strings.
+     *
+     * See:
+     * https://github.com/jwplayer/jwplayer/blob/v7.2.0/src/js/events/events.js
+     * https://github.com/jwplayer/jwplayer/blob/v7.2.0/src/js/events/states.js
+     */
+    
     var utils = jwplayer.utils,
         _ = jwplayer._,
         events = jwplayer.events,
         states = events.state,
+        
         TIMEOUT_MS = 25,
         TIMEOUT_SEC = TIMEOUT_MS/1000;
 
