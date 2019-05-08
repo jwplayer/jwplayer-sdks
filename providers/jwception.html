@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JW Player - JW Player Provider</title>
+        <meta name="viewport" content='maximum-scale=1.0, user-scalable=no'/>
+        <script type="text/javascript" src="./lib/jwplayer/jwplayer.js"></script>
+        <script type="text/javascript" src="./jwception.js"></script>
+        <style type="text/css">
+            html {
+                width: 100%;
+            }
+            body {
+                background: #ccc;
+                margin: 20px 5px;
+                font: 14px/20px Helvetica, Arial, sans-serif;
+                min-width: 320px;
+                max-width: 1080px;
+            }
+            @media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
+                body {
+                    font-size: 2vw;
+                    line-height: 3vw;
+                }
+            }
+        </style>
+    </head>
+<body>
+
+<h2>#jwception</h2>
+
+<div id="playerArea">
+    <div id="container1"></div>
+</div>
+
+<script type="text/javascript">
+    var player = jwplayer('container1').setup({
+        file: '//content.jwplatform.com/videos/QIFupG9x-480.mp4',
+        image: '//content.jwplatform.com/thumbs/QIFupG9x-640.jpg',
+        type: 'inception',
+        playbackRateControls: true
+    }).on('all', function(type, event) {
+        console.warn(type, event);
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register Provider</title>
+    <meta name="viewport" content='maximum-scale=1.0, user-scalable=no'/>
+    <script type="text/javascript" src="./lib/jwplayer/jwplayer.js"></script>
+    <script type="text/javascript" src="./timer.js"></script>
+    <style type="text/css">
+        html {
+            width: 100%;
+        }
+        body {
+            background: #ccc;
+            margin: 20px 5px;
+            font: 14px/20px Helvetica, Arial, sans-serif;
+            min-width: 320px;
+            max-width: 1080px;
+        }
+        @media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
+            body {
+                font-size: 2vw;
+                line-height: 3vw;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h2>JW Player Custom Timer provider</h2>
+    <p>timer.js registers a provider with jwplayer that recognized playlist items with urls ending in "timer" via it's `supports()` method.</p>
+
+    <div id="playerContainer">
+        <div id="player"></div>
+    </div>
+
+    <script type="text/javascript">
+        jwplayer("player").setup({
+            playlist: [{
+                file: 'this/isnt/a/real/file.timer'
+            }]
+        });
+    </script>
+
+</body>
+</html>

@@ -59,5 +59,6 @@ are not necessary.
 ### Examples
 
 * For usage in the wild view: [html5 provider](https://github.com/jwplayer/jwplayer/blob/master/src/js/providers/html5.js)
-* A contrived simpler example: [timer provider](timer.js)
+* A contrived simpler example: [timer provider](timer.js) See index.html for demo.
+* A JW Player in a JW Provider (just for fun) See jwception.html
 
